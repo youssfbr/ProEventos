@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using Microsoft.AspNetCore.Mvc;
 using ProEventos.API.Models;
 
@@ -37,6 +38,12 @@ namespace ProEventos.API.Controllers
         public IEnumerable<Evento> Get() 
         {
            return _evento;
+        }
+
+        [HttpGet("{id}")]
+        public IEnumerable<Evento> Get(int id) // Sobrecarga de métodos
+        {
+           return _evento.Where(evento => evento.EventoId == id);
         }
 
         [HttpPost]
