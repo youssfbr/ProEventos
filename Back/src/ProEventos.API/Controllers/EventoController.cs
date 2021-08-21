@@ -9,6 +9,26 @@ namespace ProEventos.API.Controllers
     [Route("api/[controller]")]
     public class EventoController : ControllerBase
     {
+       public IEnumerable<Evento> _evento = new Evento[] {
+            new Evento() {
+               EventoId = 1,
+               Tema = "Angular 11 e .NET 5",
+               Local = "Fortaleza",
+               Lote = "1º lote",
+               QtdPessoas = 250,
+               DataEvento = DateTime.Now.AddDays(2).ToString("dd/MM/yyyy"),
+               ImagemURL = "foto.png"
+         },            
+         new Evento() {
+               EventoId = 2,
+               Tema = "Java",
+               Local = "Caucaia",
+               Lote = "2º lote",
+               QtdPessoas = 350,
+               DataEvento = DateTime.Now.AddDays(3).ToString(),
+               ImagemURL = "java.png"
+         }
+      };
         public EventoController() 
         {     
         }
@@ -16,26 +36,7 @@ namespace ProEventos.API.Controllers
         [HttpGet]
         public IEnumerable<Evento> Get() 
         {
-           return new Evento[] {
-               new Evento() {
-                  EventoId = 1,
-                  Tema = "Angular 11 e .NET 5",
-                  Local = "Fortaleza",
-                  Lote = "1º lote",
-                  QtdPessoas = 250,
-                  DataEvento = DateTime.Now.AddDays(2).ToString(),
-                  ImagemURL = "foto.png"
-              },            
-              new Evento() {
-                  EventoId = 2,
-                  Tema = "Java",
-                  Local = "Caucaia",
-                  Lote = "2º lote",
-                  QtdPessoas = 350,
-                  DataEvento = DateTime.Now.AddDays(3).ToString(),
-                  ImagemURL = "java.png"
-              }
-           };
+           return _evento;
         }
 
         [HttpPost]
