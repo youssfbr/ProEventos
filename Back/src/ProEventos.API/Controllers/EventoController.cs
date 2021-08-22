@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using Microsoft.AspNetCore.Mvc;
-using ProEventos.API.Data;
-using ProEventos.API.Models;
+using ProEventos.Domain;
+using ProEventos.Persistence;
 
 namespace ProEventos.API.Controllers
 {
@@ -11,8 +11,8 @@ namespace ProEventos.API.Controllers
     [Route("api/[controller]")]
     public class EventoController : ControllerBase
     {
-       private readonly DataContext _context;
-        public EventoController(DataContext context)
+       private readonly ProEventosContext _context;
+        public EventoController(ProEventosContext context)
         {
             _context = context;
         }
@@ -27,7 +27,7 @@ namespace ProEventos.API.Controllers
         public Evento GetById(int id) 
         {
             return _context.Eventos
-               .FirstOrDefault(evento => evento.EventoId == id);
+               .FirstOrDefault(evento => evento.Id == id);
         }
 
         [HttpPost]
