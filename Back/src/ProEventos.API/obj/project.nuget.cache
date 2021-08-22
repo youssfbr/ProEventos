@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "7zrF+S3Ud9kFdHd2PcMVkSaJPnUw6N0VPntrgIYJb/IIp6xQXBV4N3XK9sDmLC00/+h4GTiPNLjueyQ7NYzn6A==",
+  "dgSpecHash": "W3XXORPtWllsEgNqAPNO0DoDh1fjR02n2qBYhWPfVe5Sf4C086aibBj84T+CPkmnJ3IP9fDD8y95OGe+i0S97Q==",
   "success": true,
   "projectFilePath": "C:\\dev\\workspace\\dotnet\\ProEventos\\Back\\src\\ProEventos.API\\ProEventos.API.csproj",
   "expectedPackageFiles": [
