@@ -55,3 +55,9 @@ C:\dev\workspace\dotnet\ProEventos\Back\src\ProEventos.API\bin\Debug\net5.0\runt
 C:\dev\workspace\dotnet\ProEventos\Back\src\ProEventos.API\bin\Debug\net5.0\runtimes\win-arm64\native\e_sqlite3.dll
 C:\dev\workspace\dotnet\ProEventos\Back\src\ProEventos.API\bin\Debug\net5.0\runtimes\win-x64\native\e_sqlite3.dll
 C:\dev\workspace\dotnet\ProEventos\Back\src\ProEventos.API\bin\Debug\net5.0\runtimes\win-x86\native\e_sqlite3.dll
+C:\dev\workspace\dotnet\ProEventos\Back\src\ProEventos.API\bin\Debug\net5.0\ProEventos.Application.dll
+C:\dev\workspace\dotnet\ProEventos\Back\src\ProEventos.API\bin\Debug\net5.0\ProEventos.Domain.dll
+C:\dev\workspace\dotnet\ProEventos\Back\src\ProEventos.API\bin\Debug\net5.0\ProEventos.Persistence.dll
+C:\dev\workspace\dotnet\ProEventos\Back\src\ProEventos.API\bin\Debug\net5.0\ProEventos.Application.pdb
+C:\dev\workspace\dotnet\ProEventos\Back\src\ProEventos.API\bin\Debug\net5.0\ProEventos.Domain.pdb
+C:\dev\workspace\dotnet\ProEventos\Back\src\ProEventos.API\bin\Debug\net5.0\ProEventos.Persistence.pdb
